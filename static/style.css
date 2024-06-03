@@ -1,0 +1,77 @@
+:root{
+    /* Paleta Azul */
+    --blue_1: #CDFAFA;
+    --blue_2: #0AC8B9;
+    --blue_3: #0397AB;
+    --blue_4: #005A82;
+    --blue_5: #0A323C;
+    --blue_6: #091428;
+    --blue_7: #0A1428;
+    /* Paleta Dourada */
+    --gold_1: #F0E6D2;
+    --gold_2: #C8AA6E;
+    --gold_3: #C8AA6E;
+    --gold_4: #C89B3C;
+    --gold_5: #785A28;
+    --gold_6: #463714;
+    --gold_7: #32281E;
+    /* Paleta Cinza */
+    --gray_1: #A09B8C;
+    --gray_2: #5B5A56;
+    --gray_3: #3C3C41;
+    --gray_4: #1E2328;
+    --gray_5: #1E282D;
+    --black: #010A13;
+    /* Degradê Azul Escuro */
+    --blue_degrade: #091428, #0A1428;
+    /* Degradê Dourado */
+    --gold_degrade: #785A28, #C89B3C;
+    /* Degradê Azul */
+    --blue_degrade_claro: #005A82, #0AC8B9;
+}
+
+html{
+    background: linear-gradient(90deg, var(--blue_degrade));
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+.image-perfil{
+    box-shadow: 5px 4px 4px black;
+    object-fit: cover;
+    border-radius: 2%;
+    width: 20rem;
+    height: 32rem;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.4;
+}
+
+main{
+    color: var(--gold_1);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    margin: 0px 0px 0px 0.90rem;
+    font-size: 3.5rem;
+}
+
+nav {
+    padding-bottom: 0px;
+    padding: 7px;
+    background: linear-gradient(90deg, var(--blue_degrade));
+    width: 100%;
+    position: fixed; /* Fixa a barra de navegação no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    transition: top 0.3s, height 0.3s; /* Adiciona uma transição suave ao movimento */
+}
+
+.links{
+    display: flex;
+}
